@@ -2,6 +2,17 @@
 
 This is an example of Rails API with nginx dockerized in a container for production mode.
 
+### Dependencies to install
+
+- Ruby
+- Postgresql
+- Docker
+
+### Installation
+
+- clone the project
+- run `bundle` to install the gems
+
 ### Running
 
 - run `docker-compose build`
@@ -12,4 +23,4 @@ This is an example of Rails API with nginx dockerized in a container for product
 
 ### API request
 
-POint your browser to `localhost:80:posts` to see the 10 created posts.
+Point your browser to `localhost:80:posts` to see the 10 created posts.
