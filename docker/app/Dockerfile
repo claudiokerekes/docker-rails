@@ -4,7 +4,7 @@ RUN mkdir /docker-rails
 WORKDIR /docker-rails
 
 ENV RAILS_ENV='production'
-ENV RAKE_ENV='production'
+ENV RACK_ENV='production'
 
 ADD Gemfile /docker-rails/Gemfile
 ADD Gemfile.lock /docker-rails/Gemfile.lock
