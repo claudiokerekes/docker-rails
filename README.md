@@ -23,4 +23,4 @@ This is an example of Rails API with nginx dockerized in a container for product
 
 ### API request
 
-Point your browser to `localhost:80:posts` to see the 10 created posts.
+Point your browser to `localhost:80/posts` to see the 10 created posts.
