@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example of Rails API with nginx dockerized in a container for production mode.
 
-Things you may want to cover:
+### Running
 
-* Ruby version
+- run `docker-compose build`
+- run `docker-compose up -d`
+- run `docker-compose run app rails db:create RAILS_ENV=production`
+- run `docker-compose run app rails db:migrate RAILS_ENV=production`
+- run `docker-compose run app rails db:seed RAILS_ENV=production`
 
-* System dependencies
+### API request
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+POint your browser to `localhost:80:posts` to see the 10 created posts.
