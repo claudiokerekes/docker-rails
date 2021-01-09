@@ -17,9 +17,9 @@ This is an example of Rails API with nginx dockerized in a container for product
 
 - run `docker-compose build`
 - run `docker-compose up -d`
-- run `docker-compose run app rails db:create RAILS_ENV=production`
-- run `docker-compose run app rails db:migrate RAILS_ENV=production`
-- run `docker-compose run app rails db:seed RAILS_ENV=production`
+- run `docker-compose exec app rails db:create RAILS_ENV=production`
+- run `docker-compose exec app rails db:migrate RAILS_ENV=production`
+- run `docker-compose exec app rails db:seed RAILS_ENV=production`
 
 ### API request
 
